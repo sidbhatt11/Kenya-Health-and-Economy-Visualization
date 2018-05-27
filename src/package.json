@@ -1,0 +1,28 @@
+{
+  "name": "kenyaviz",
+  "version": "1.0.0",
+  "description": "Data-Visualization project done in D3 for FIT5147",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/sbha0005Monash/kenyaviz.git"
+  },
+  "keywords": [
+    "d3",
+    "kenya",
+    "visualization"
+  ],
+  "author": "Siddharth Bhatt",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/sbha0005Monash/kenyaviz#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "d3": "^5.4.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "vue": "^2.5.16"
+  }
+}
