@@ -1,20 +1,22 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-// This will make JQuery available globally as '$' 
 // Feels right at home!
-import jQuery from 'jquery'
-// eslint-disable-next-line
-global.$ = jQuery
+import $ from 'jquery'
+import 'popper.js'
+import 'bootstrap/dist/js/bootstrap.min.js'
 
-// This will import all Bootstrap JavaScript files
-// eslint-disable-next-line
-let Bootstrap = require('bootstrap')
+global.$ = $;
 
-// This will import all Bootstrap CSS files
-import 'bootstrap/dist/css/bootstrap.min.css'
+// This will import Bootstrap CSS file
+import 'bootstrap/dist/css/bootstrap.min.litera.css'
 
 Vue.config.productionTip = false
+
+// Enable tooltips everywhere
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})
 
 new Vue({
     render: h => h(App)
