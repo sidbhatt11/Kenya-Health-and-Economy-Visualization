@@ -24,6 +24,7 @@
 						</div>
 					</div>
 				</template>
+				<h3 v-if="showNotice">Please select one indicator</h3>
 			</div>
 			<div class="tab-pane fade" id="news">
 				<h3>This feature is work in progress</h3>
@@ -38,12 +39,18 @@ export default {
 	data: function() {
 		return {
 			healthAttribute: {},
-			economicalAttribute: {}
+			economicalAttribute: {},
+			showNotice: true
 		}
 	},
 	computed: {
-		attributesToExplain: function(){
+		attributesToExplain: function() {
 			return [this.$data.healthAttribute, this.$data.economicalAttribute]
+		}
+	},
+	watch: {
+		attributesToExplain: function(array) {
+			this.$data.showNotice = (array.length == 0)
 		}
 	},
 	methods: {

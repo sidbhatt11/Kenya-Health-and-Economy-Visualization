@@ -7,14 +7,14 @@
       <!-- First row contains Navbar etc-->
       <Navigation/>
       <!-- Second row contains selectors and charts-->
-      <div class="row">
-        <div class="col" id="healthSelectorContainer">
+      <div class="row" id="chartRow">
+        <div class="col bg-light" id="healthSelectorContainer">
           <HealthAttributeSelector ref="HealthAttributeSelector"/>
         </div>
         <div class="col-8" id="chartContainer">
           <Chart ref="Chart"/>
         </div>
-        <div class="col" id="economicalSelectorContainer">
+        <div class="col bg-light" id="economicalSelectorContainer">
           <EconomicalAttributeSelector ref="EconomicalAttributeSelector"/>
         </div>
       </div>
@@ -144,7 +144,7 @@ export default {
 </script>
 
 <style scoped>
-#mainLand {
+#mainLand, #chartRow {
   margin-top: 10px;
   margin-bottom: 10px;
 }
