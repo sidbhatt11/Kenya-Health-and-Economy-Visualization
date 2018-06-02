@@ -2,12 +2,13 @@
 	<div class="row bg-light" id="selectedAttributesPane">
 		<div class="col-2">
 			<span class="align-middle font-weight-bold">
-				Selected Attributes
+				Selected Indicators
 			</span>
 		</div>
 		<div class="col" id="attributesContainer">
-			<template v-for="attribute in selectedAttributes">
-				<button v-bind:key="attribute" v-on:click="attributeClicked" type="button" class="btn btn-primary btn-sm attribute" data-toggle="tooltip" data-placement="top" title="Click to Remove">
+			<template v-for="attribute in selectedAttributes" v-if="attribute">
+				<!-- v-on:click="attributeClicked" -->
+				<button v-bind:key="attribute" type="button" class="btn btn-primary btn-sm attribute" data-toggle="tooltip" data-placement="top" title="Click to Remove">
 					{{ attribute }}
 				</button>
 			</template>
@@ -20,7 +21,7 @@ export default {
 	name: 'SelectedAttributesPane',
 	data: function() {
 		return {
-			selectedAttributes: ["firstAttribute", "secondAttribute"]
+			selectedAttributes: []
 		}
 	},
 	methods: {
@@ -46,8 +47,8 @@ export default {
 
 <style scoped>
 #selectedAttributesPane {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 
 	padding-top: 10px;
 	padding-bottom: 10px;

@@ -1,0 +1,59 @@
+[{
+        "title": "Life expectancy at birth",
+        "definition": "Life expectancy at birth indicates the number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life.",
+        "source": "( 1 ) United Nations Population Division. World Population Prospects: 2017 Revision, or derived from male and female life expectancy at birth from sources such as: ( 2 ) Census reports and other statistical publications from national statistical offices, ( 3 ) Eurostat: Demographic Statistics, ( 4 ) United Nations Statistical Division. Population and Vital Statistics Reprot ( various years ), ( 5 ) U.S. Census Bureau: International Database, and ( 6 ) Secretariat of the Pacific Community: Statistics and Demography Programme.",
+        "sourceLink": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2016
+                }
+            },
+            "y": {
+                "title": "Total years",
+                "range": {
+                    "from": 60,
+                    "to": 70
+                }
+            }
+        },
+        "values": {
+            "2012": 64.91,
+            "2013": 65.65,
+            "2014": 66.24,
+            "2015": 66.70,
+            "2016": 67.03
+        }
+    },
+    {
+        "title": "Death rate (crude)",
+        "definition": "Crude death rate indicates the number of deaths occurring during the year, per 1,000 population estimated at midyear. Subtracting the crude death rate from the crude birth rate provides the rate of natural increase, which is equal to the rate of population change in the absence of migration.",
+        "source": "( 1 ) United Nations Population Division. World Population Prospects: 2017 Revision. ( 2 ) Census reports and other statistical publications from national statistical offices, ( 3 ) Eurostat: Demographic Statistics, ( 4 ) United Nations Statistical Division. Population and Vital Statistics Reprot ( various years ), ( 5 ) U.S. Census Bureau: International Database, and ( 6 ) Secretariat of the Pacific Community: Statistics and Demography Programme.",
+        "sourceLink": "https://data.worldbank.org/indicator/SP.DYN.CDRT.IN",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2016
+                }
+            },
+            "y": {
+                "title": "Death rate per 1K people",
+                "range": {
+                    "from": 0,
+                    "to": 10
+                }
+            }
+        },
+        "values": {
+            "2012": 6.494,
+            "2013": 6.213,
+            "2014": 5.998,
+            "2015": 5.841,
+            "2016": 5.732
+        }
+    }
+]

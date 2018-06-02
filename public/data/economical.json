@@ -1,0 +1,59 @@
+[{
+        "title": "GDP per capita",
+        "definition": "GDP per capita is gross domestic product divided by midyear population. GDP is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. Data are in current U.S. dollars.",
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "sourceLink": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2016
+                }
+            },
+            "y": {
+                "title": "USD (current)",
+                "range": {
+                    "from": 1000,
+                    "to": 1500
+                }
+            }
+        },
+        "values": {
+            "2012": 1155.02,
+            "2013": 1229.11,
+            "2014": 1335.06,
+            "2015": 1349.97,
+            "2016": 1455.36
+        }
+    },
+    {
+        "title": "GNI per capita",
+        "definition": "GNI per capita (formerly GNP per capita) is the gross national income, converted to U.S. dollars using the World Bank Atlas method, divided by the midyear population. GNI is the sum of value added by all resident producers plus any product taxes (less subsidies) not included in the valuation of output plus net receipts of primary income (compensation of employees and property income) from abroad.",
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "sourceLink": "https://data.worldbank.org/indicator/NY.GNP.PCAP.CD",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2016
+                }
+            },
+            "y": {
+                "title": "USD (current)",
+                "range": {
+                    "from": 1000,
+                    "to": 1500
+                }
+            }
+        },
+        "values": {
+            "2012": 1060,
+            "2013": 1150,
+            "2014": 1260,
+            "2015": 1310,
+            "2016": 1380
+        }
+    }
+]

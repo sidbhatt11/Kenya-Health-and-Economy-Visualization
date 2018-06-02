@@ -6,10 +6,12 @@ import $ from 'jquery'
 import 'popper.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
-global.$ = $;
+global.$ = $
 
 // This will import Bootstrap CSS file
 import 'bootstrap/dist/css/bootstrap.min.litera.css'
+// This will import C3 CSS file
+import 'c3/c3.min.css'
 
 Vue.config.productionTip = false
 
@@ -17,6 +19,10 @@ Vue.config.productionTip = false
 $(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
+
+// Install D3 Plugin
+var VueD3 = require('vue-d3')
+Vue.use(VueD3)
 
 new Vue({
     render: h => h(App)
