@@ -22,7 +22,7 @@
       <SelectedAttributesPane ref="selectedAttributesPane" />
       <!-- Fourth row contains news, explanations etc-->
       <div class="row">
-          Full width row
+          <UnderstandingComponent ref="UnderstandingComponent"/>
       </div>
     </div>
   </div>
@@ -35,6 +35,7 @@ import Chart from './components/Chart.vue'
 import EconomicalAttributeSelector from './components/EconomicalAttributeSelector.vue'
 import HealthAttributeSelector from './components/HealthAttributeSelector.vue'
 import SelectedAttributesPane from './components/SelectedAttributesPane.vue'
+import UnderstandingComponent from './components/UnderstandingComponent.vue'
 
 export default {
   name: 'app',
@@ -43,7 +44,8 @@ export default {
     Chart,
     EconomicalAttributeSelector,
     HealthAttributeSelector,
-    SelectedAttributesPane
+    SelectedAttributesPane,
+    UnderstandingComponent
   },
   data: function() {
     return {
@@ -114,6 +116,7 @@ export default {
         }
       });
       this.$refs.Chart.economicalObject = selectedObject
+      this.$refs.UnderstandingComponent.economicalAttribute = selectedObject
     },
     selectedHealthAttribute: function(string) {
       var selectedObject = {}
@@ -123,6 +126,7 @@ export default {
         }
       });
       this.$refs.Chart.healthObject = selectedObject
+      this.$refs.UnderstandingComponent.healthAttribute = selectedObject
     }
   },
   beforeMount() {
