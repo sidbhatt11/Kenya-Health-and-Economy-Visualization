@@ -55,5 +55,90 @@
             "2015": 1310,
             "2016": 1380
         }
+    },
+    {
+        "title": "Out-of-pocket expenditure",
+        "definition": "Share of out-of-pocket payments of total current health expenditures. Out-of-pocket payments are spending on health directly out-of-pocket by households. Strengthening health financing is one objective of Sustainable Development Goal 3 (SDG target 3.c). The levels and trends of health expenditure data identify key issues such as weaknesses and strengths and areas that need investment, for instance additional health facilities, better health information systems, or better trained human resources. Health financing is also critical for reaching universal health coverage (UHC) defined as all people obtaining the quality health services they need without suffering financial hardship (SDG 3.8). The data on out-of-pocket spending is a key indicator with regard to financial protection and hence of progress towards UHC.",
+        "source": "World Health Organization Global Health Expenditure database",
+        "sourceLink": "http://apps.who.int/nha/database",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2015
+                }
+            },
+            "y": {
+                "title": "Out-of-pocket expenditure (% of current health expenditure)",
+                "range": {
+                    "from": 30,
+                    "to": 40
+                }
+            }
+        },
+        "values": {
+            "2012": 33.19,
+            "2013": 31.21,
+            "2014": 32.18,
+            "2015": 33.37
+        }
+    },
+    {
+        "title": "Domestic general government health expenditure per capita",
+        "definition": "Public expenditure on health from domestic sources per capita expressed in current US dollars.",
+        "source": "World Health Organization Global Health Expenditure database",
+        "sourceLink": "http://apps.who.int/nha/database",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2015
+                }
+            },
+            "y": {
+                "title": "Domestic general government health expenditure per capita (current US$)",
+                "range": {
+                    "from": 20,
+                    "to": 30
+                }
+            }
+        },
+        "values": {
+            "2012": 20.69,
+            "2013": 22.85,
+            "2014": 24.04,
+            "2015": 23.19
+        }
+    },
+    {
+        "title": "Foreign direct investment, net inflows",
+        "definition": "Foreign direct investment refers to direct investment equity flows in the reporting economy. It is the sum of equity capital, reinvestment of earnings, and other capital. Direct investment is a category of cross-border investment associated with a resident in one economy having control or a significant degree of influence on the management of an enterprise that is resident in another economy. Ownership of 10 percent or more of the ordinary shares of voting stock is the criterion for determining the existence of a direct investment relationship. Data are in current U.S. dollars. Private financial flows - equity and debt - account for the bulk of development finance. Equity flows comprise foreign direct investment (FDI) and portfolio equity. Debt flows are financing raised through bond issuance, bank lending, and supplier credits.",
+        "source": "International Monetary Fund, Balance of Payments database, supplemented by data from the United Nations Conference on Trade and Development and official national sources.",
+        "sourceLink": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2016
+                }
+            },
+            "y": {
+                "title": "Foreign direct investment, net inflows (BoP, current million US$)",
+                "range": {
+                    "from": 20,
+                    "to": 30
+                }
+            }
+        },
+        "values": {
+            "2012": 1380.17,
+            "2013": 1118.83,
+            "2014": 820.94,
+            "2015": 619.72,
+            "2016": 393.36
+        }
     }
 ]

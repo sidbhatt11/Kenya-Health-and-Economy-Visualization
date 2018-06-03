@@ -55,5 +55,121 @@
             "2015": 5.841,
             "2016": 5.732
         }
+    },
+    {
+        "title": "Infant Mortality rate",
+        "definition": "Infant mortality rate is the number of infants dying before reaching one year of age, per 1,000 live births in a given year. Mortality rates for different age groups (infants, children, and adults) and overall mortality indicators (life expectancy at birth or survival to a given age) are important indicators of health status in a country. Because data on the incidence and prevalence of diseases are frequently unavailable, mortality rates are often used to identify vulnerable populations. And they are among the indicators most frequently used to compare socioeconomic development across countries.",
+        "source": " Estimates developed by the UN Inter-agency Group for Child Mortality Estimation ( UNICEF, WHO, World Bank, UN DESA Population Division )",
+        "sourceLink": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2016
+                }
+            },
+            "y": {
+                "title": "Infant Mortality rate per 1K people",
+                "range": {
+                    "from": 35,
+                    "to": 40
+                }
+            }
+        },
+        "values": {
+            "2012": 40.6,
+            "2013": 39.6,
+            "2014": 38.2,
+            "2015": 36.5,
+            "2016": 35.6
+        }
+    },
+    {
+        "title": "Incidence of tuberculosis",
+        "definition": "Incidence of tuberculosis is the estimated number of new and relapse tuberculosis cases arising in a given year, expressed as the rate per 100,000 population. All forms of TB are included, including cases in people living with HIV. Estimates for all years are recalculated as new information becomes available and techniques are refined, so they may differ from those published previously. Tuberculosis is one of the main causes of adult deaths from a single infectious agent in developing countries. In developed countries tuberculosis has reemerged largely as a result of cases among immigrants. Since tuberculosis incidence cannot be directly measured, estimates are obtained by eliciting expert opinion or are derived from measurements of prevalence or mortality.",
+        "source": "World Health Organization, Global Tuberculosis Report.",
+        "sourceLink": "https://data.worldbank.org/indicator/SH.TBS.INCD",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2016
+                }
+            },
+            "y": {
+                "title": "Incidence of tuberculosis (per 100,000 people)",
+                "range": {
+                    "from": 300,
+                    "to": 400
+                }
+            }
+        },
+        "values": {
+            "2012": 471,
+            "2013": 443,
+            "2014": 423,
+            "2015": 380,
+            "2016": 348
+        }
+    },
+    {
+        "title": "Prevalence of HIV",
+        "definition": "Prevalence of HIV refers to the percentage of people ages 15-49 who are infected with HIV.",
+        "source": "UNAIDS estimates.",
+        "sourceLink": "https://data.worldbank.org/indicator/SH.DYN.AIDS.ZS",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2016
+                }
+            },
+            "y": {
+                "title": "Prevalence of HIV (% of population ages 15-49)",
+                "range": {
+                    "from": 6,
+                    "to": 4
+                }
+            }
+        },
+        "values": {
+            "2012": 5.9,
+            "2013": 5.8,
+            "2014": 5.7,
+            "2015": 5.6,
+            "2016": 5.4
+        }
+    },
+    {
+        "title": "Measles immunization ",
+        "definition": "Child immunization, measles, measures the percentage of children ages 12-23 months who received the measles vaccination before 12 months or at any time before the survey. A child is considered adequately immunized against measles after receiving one dose of vaccine. Governments in developing countries usually finance immunization against measles and diphtheria, pertussis (whooping cough), and tetanus (DTP) as part of the basic public health package. The data shown here are based on an assessment of national immunization coverage rates by the WHO and UNICEF.",
+        "source": "WHO and UNICEF",
+        "sourceLink": "http://www.who.int/immunization/monitoring_surveillance/en/",
+        "axis": {
+            "x": {
+                "title": "Years",
+                "range": {
+                    "from": 2012,
+                    "to": 2016
+                }
+            },
+            "y": {
+                "title": "Immunization, measles (% of children ages 12-23 months)",
+                "range": {
+                    "from": 6,
+                    "to": 4
+                }
+            }
+        },
+        "values": {
+            "2012": 93,
+            "2013": 73,
+            "2014": 79,
+            "2015": 75,
+            "2016": 75
+        }
     }
 ]
