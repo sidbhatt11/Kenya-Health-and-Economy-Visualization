@@ -61,6 +61,38 @@ export default {
       }
   },
   methods: {
+    fetchNews: function(query) {
+        // Fire GCSE
+        // eval("var newsElement = google.search.cse.element.getElement('kenyaSearch'); newsElement.execute(" + String(query) + ");")
+
+        document.querySelector("input.gsc-input").value = String(query);
+
+        // Fire search query
+        global.$("button.gsc-search-button").click();
+
+        var refToChild = this.$refs.UnderstandingComponent;
+
+        // Wait for results to load and then hide useless stuff
+        setTimeout(function() {
+
+            // $("div#newsContainer").hide();
+
+            // Hide the searchbox
+            global.$("form.gsc-search-box").hide();
+
+            // Hide the result meta info
+            global.$("div.gsc-above-wrapper-area").hide();
+
+            // Hide Ads
+            global.$("div.gsc-adBlock").hide();
+
+            // Everything is hidden now.. time to reveal the result
+            global.$("div#newsContainer").show();
+
+            refToChild.newsLoading = false
+
+        }, 4000);
+    },
     reloadEconomicData: function() {
       
       // A workaround for referencing 'this' inside a d3 block
@@ -68,12 +100,12 @@ export default {
 
       this.$d3.json("/data/economical.json", function(error, ecoArray){
         if(error) {
-          return alert("Enable to get economical data");
+          alert("Enable to get economical data")
+          return
         }
 
         // Reset economic attributes
         thisComponent.$data.economicalAttributes = ecoArray;
-        return;
       })
 
     },
@@ -83,12 +115,12 @@ export default {
 
       this.$d3.json("/data/health.json", function(error, healthArray){
         if(error) {
-          return alert("Enable to get health data");
+           alert("Enable to get health data")
+           return
         }
 
         // Reset economic attributes
         thisComponent.$data.healthAttributes = healthArray;
-        return;
       })
     },
     activeEconomicalAttributeChanged: function(attribute) {

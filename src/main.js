@@ -18,7 +18,19 @@ Vue.config.productionTip = false
 // Enable tooltips everywhere
 $(function() {
     $('[data-toggle="tooltip"]').tooltip()
-})
+});
+
+// This will load Google Custom Search Engine
+$(function() {
+    var cx = '000388830782874123297:o_uaywvnry0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+});
+
 
 // Install D3 Plugin
 var VueD3 = require('vue-d3')
