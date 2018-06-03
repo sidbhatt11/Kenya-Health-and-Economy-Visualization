@@ -1,11 +1,6 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    
     <div class="container" id="mainLand">
-      <!-- First row contains Navbar etc-->
-      <Navigation/>
       <!-- Second row contains selectors and charts-->
       <div class="row" id="chartRow">
         <div class="col bg-light" id="healthSelectorContainer">
@@ -30,7 +25,6 @@
 </template>
 
 <script>
-import Navigation from './components/Navigation.vue'
 import Chart from './components/Chart.vue'
 import EconomicalAttributeSelector from './components/EconomicalAttributeSelector.vue'
 import HealthAttributeSelector from './components/HealthAttributeSelector.vue'
@@ -40,7 +34,6 @@ import UnderstandingComponent from './components/UnderstandingComponent.vue'
 export default {
   name: 'app',
   components: {
-    Navigation,
     Chart,
     EconomicalAttributeSelector,
     HealthAttributeSelector,

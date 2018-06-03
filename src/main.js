@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import About from './About.vue'
+import Navigation from './components/Navigation.vue'
 
 /**
  * ================= Front-end dependencies =================
@@ -52,6 +53,10 @@ const routes = {
     '/': App,
     '/about': About
 }
+
+new Vue({
+    render(h) { return h(Navigation) }
+}).$mount('#navigationBlock')
 
 new Vue({
     data: {
