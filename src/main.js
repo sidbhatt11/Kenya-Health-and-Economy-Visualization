@@ -1,5 +1,11 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
+import About from './About.vue'
+
+/**
+ * ================= Front-end dependencies =================
+ */
 
 // Feels right at home!
 import $ from 'jquery'
@@ -12,8 +18,6 @@ global.$ = $
 import 'bootstrap/dist/css/bootstrap.min.litera.css'
 // This will import C3 CSS file
 import 'c3/c3.min.css'
-
-Vue.config.productionTip = false
 
 // Enable tooltips everywhere
 $(function() {
@@ -31,11 +35,32 @@ $(function() {
     s.parentNode.insertBefore(gcse, s);
 });
 
-
 // Install D3 Plugin
 var VueD3 = require('vue-d3')
 Vue.use(VueD3)
 
+/**
+ * ================= Routing Stuff =================
+ */
+
+Vue.config.productionTip = false
+
+//  Use Vue Router
+Vue.use(VueRouter)
+
+const routes = {
+    '/': App,
+    '/about': About
+}
+
 new Vue({
-    render: h => h(App)
+    data: {
+        currentRoute: window.location.pathname
+    },
+    computed: {
+        ViewComponent() {
+            return routes[this.currentRoute] || App
+        }
+    },
+    render(h) { return h(this.ViewComponent) }
 }).$mount('#app')

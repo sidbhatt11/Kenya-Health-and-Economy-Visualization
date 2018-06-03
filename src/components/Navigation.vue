@@ -9,17 +9,19 @@
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarColor01">
-						<ul class="navbar-nav mr-auto">
+					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							<router-link class="nav-link" to="/">Home</router-link>
+							<!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Reset</a>
+							<a class="nav-link" href="#" v-on:click="reload">Reset</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
+							<router-link class="nav-link" to="/about">About</router-link>
+							<!-- <a class="nav-link"href="#">About</a> -->
 						</li>
-						</ul>
+					</ul>
 				</div>
 			</nav>
 		</div>
@@ -28,7 +30,12 @@
 
 <script>
 export default {
-	name:'Navigation'
+	name:'Navigation',
+	methods: {
+		reload: function(){
+			location.reload();
+		}
+	}
 }
 </script>
 
