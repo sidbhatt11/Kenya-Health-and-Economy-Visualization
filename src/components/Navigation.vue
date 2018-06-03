@@ -10,16 +10,14 @@
 
 				<div class="collapse navbar-collapse" id="navbarColor01">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<router-link class="nav-link" to="/">Home</router-link>
-							<!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+						<li id="homeLinkContainer" class="nav-item">
+							<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#" v-on:click="reload">Reset</a>
 						</li>
-						<li class="nav-item">
-							<router-link class="nav-link" to="/about">About</router-link>
-							<!-- <a class="nav-link"href="#">About</a> -->
+						<li id="aboutLinkContainer" class="nav-item">
+							<a class="nav-link" href="/about">About</a>
 						</li>
 					</ul>
 				</div>
@@ -35,6 +33,20 @@ export default {
 		reload: function(){
 			location.reload();
 		}
+	},
+	mounted() {
+		this.$nextTick(function(){
+			var currentURL = String(location.href);
+			if(currentURL.includes("about")) {
+				// Make about link active
+				document.querySelector("li#homeLinkContainer").setAttribute("class","nav-item");
+				document.querySelector("li#aboutLinkContainer").setAttribute("class","nav-item active");
+			} else {
+				// Make home link active
+				document.querySelector("li#homeLinkContainer").setAttribute("class","nav-item active");
+				document.querySelector("li#aboutLinkContainer").setAttribute("class","nav-item");
+			}
+		})
 	}
 }
 </script>
