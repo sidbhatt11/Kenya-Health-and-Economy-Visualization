@@ -20,5 +20,8 @@ npm run build
 npm install -g serve
 serve -s dist
 ```
+
+I recommend running a development build and pointing your browser at http://localhost:8080/ ( or whatever it says in terminal ).
+
 # Author
 Siddharth Bhatt <sbha0005@student.monash.edu>
