@@ -5,9 +5,11 @@
     "scripts": {
         "serve": "vue-cli-service serve --open",
         "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
+        "lint": "vue-cli-service lint",
+        "postinstall": "wget https://bootswatch.com/4/litera/bootstrap.min.css -O ./node_modules/bootstrap/dist/css/bootstrap.min.litera.css"
     },
     "dependencies": {
+        "babel-core": "^6.26.3",
         "bootstrap": "^4.1.1",
         "d3": "^5.4.0",
         "jquery": "^3.3.1",
