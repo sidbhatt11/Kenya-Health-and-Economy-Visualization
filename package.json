@@ -9,13 +9,13 @@
         "postinstall": "wget https://bootswatch.com/4/litera/bootstrap.min.css -O ./node_modules/bootstrap/dist/css/bootstrap.min.litera.css"
     },
     "dependencies": {
-        "babel-core": "^6.26.3",
+        "babel-core": "",
         "bootstrap": "^4.1.1",
         "d3": "^5.4.0",
         "jquery": "^3.3.1",
         "popper.js": "^1.14.3",
         "require.js": "^1.0.0",
-        "serve": "^6.5.8",
+        "serve": "^7.0.0",
         "tooltip.js": "^1.2.0",
         "vue": "^2.5.16",
         "vue-c3": "1.1.1",
